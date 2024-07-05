@@ -1,23 +1,82 @@
+:root {
+  --primary-color: red;
+  --secondary-color: blue;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sign-in-card {
-    border: 1px solid red;
-    background-color: aliceblue;
+  border: 1px solid red;
+  background-color: aliceblue;
+  padding: 0.5rem;
+}
+
+.sign-in-heading {
+  font-size: larger;
+  letter-spacing: 0.2rem;
+}
+.sign-in-heading > i {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.input-main-box {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-main-box > label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.07rem;
+}
+
+.input-sub-box {
+  margin-top: 0.3rem;
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+.input-sub-box > input {
+  width: 90%;
+  height: 2rem;
+  margin-left: 2%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.check-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+.btn {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem;
+    background-color: var(--primary-color);
+}
+.btn:hover {
+    background-color: var(--secondary-color);
 }
